@@ -1,0 +1,15 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1 class="mb-4">Detalle de producto</h1>
+
+    <div class="producto">
+        <h3 class="mb-3">Producto: {{ productos.nombre }}</h3>
+        <p class="mb-2">Precio: {{ productos.precio }}</p>
+        <p class="mb-2">Stock: {{ productos.stock }}</p>
+        <p class="mb-2">Categoría: {{ productos.categoria.nombre }}</p>
+    </div>
+    <a class="btn btn-primary mt-4" href="/tienda/">Volver</a>
+
+{% endblock %}
